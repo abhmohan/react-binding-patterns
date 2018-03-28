@@ -14,3 +14,17 @@ export default class MyComponent extends React.Component {
     )
   }
 }
+
+2.Arrow function
+
+export default class MyComponent extends React.Component {
+  
+  handleClick() {
+    alert("button clicked")
+  }
+  render() {
+    return(
+      <button onClick={this.handleClick.bind(this)}></button>
+    )
+  }
+}
