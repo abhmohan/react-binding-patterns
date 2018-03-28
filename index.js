@@ -1,13 +1,6 @@
-/*
-	1.Using es5 React.createClass
-	2.Binding inside render method
-	3.Arrow function
-	4.Bind inside constructor
-	5.Arrow function in class property
-*/
 
+//Using ES5 React.createClass
 var MyComponent = React.createClass({
-
 	render: function() {
 		return(
 			<button onClick={this.handleClick}>Click Me</button>
@@ -15,9 +8,8 @@ var MyComponent = React.createClass({
 	}
 })
 
-
+//binding this inside render
 class MyComponent extends React.Component {
-
 	render() {
 		return(
 			<button onClick={this.handleClick.bind(this)}>Click Me</button>
@@ -25,8 +17,8 @@ class MyComponent extends React.Component {
 	}
 }
 
+//arrow function
 class MyComponent extends React.Component {
-
 	render() {
 		return(
 			<button onClick={e => this.handleClick(e)}>Click Me</button>
@@ -34,9 +26,8 @@ class MyComponent extends React.Component {
 	}
 }
 
-
+//binding inside constructor(Recommended in React Docs)
 class MyComponent extends React.Component {
-
 	constructor() {
 		super();
 		this.handleClick = this.handleClick.bind(this)
@@ -49,10 +40,10 @@ class MyComponent extends React.Component {
 	}
 }
 
+//Arrow function in class property
 class MyComponent extends React.Component {
-
 	handleClick = () => {
-		console.error("button clicked")
+		
 	}
 	render() {
 		return(
