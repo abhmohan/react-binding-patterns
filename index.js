@@ -1,5 +1,5 @@
 
-//Using ES5 React.createClass
+//Using ES5 React.createClass(auto binding no need to explicitly bind this)
 var MyComponent = React.createClass({
 	render: function() {
 		return(
