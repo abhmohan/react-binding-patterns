@@ -16,7 +16,7 @@ var MyComponent = React.createClass({
 })
 
 
-class extends React.Component {
+class MyComponent extends React.Component {
 
 	render() {
 		return(
@@ -25,7 +25,7 @@ class extends React.Component {
 	}
 }
 
-class extends React.Component {
+class MyComponent extends React.Component {
 
 	render() {
 		return(
@@ -35,7 +35,7 @@ class extends React.Component {
 }
 
 
-class extends React.Component {
+class MyComponent extends React.Component {
 
 	constructor() {
 		super();
@@ -49,7 +49,7 @@ class extends React.Component {
 	}
 }
 
-class extends React.Component {
+class MyComponent extends React.Component {
 
 	handleClick = () => {
 		console.error("button clicked")
